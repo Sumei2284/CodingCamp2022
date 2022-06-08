@@ -1,0 +1,508 @@
+.wrap {
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/bg_home.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    height: 768px;
+    position: relative;
+}
+@media (max-width: 576px) {
+    .wrap {
+        background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/bg_home_sm.svg");
+        background-position: center top 392px;
+    }
+}
+
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 335px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.header {
+    height: 88px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background: transparent;
+    & a {
+        background: #FF5D50 0% 0% no-repeat padding-box;
+        border-radius: 22px;
+        font: normal normal normal 16px/24px Noto Sans TC;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        padding: 8px 32px;
+    }
+}
+@media (max-width: 576px) {
+    .header {
+        & img {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 217px;
+    width: 100%;
+    .bannerText {
+        width: 50%;
+        text-align: left;
+        align-items: center;
+        letter-spacing: 0px;
+        .subTitle {
+            font: normal normal bold 18px/26px Noto Sans TC;
+            color: #56C4C5;
+        }
+        & h1 {
+            font: normal normal bold 48px/70px Noto Sans TC;
+            color: #221E1F;
+        }
+        & h2 {
+            font: normal normal normal 20px/29px Noto Sans TC;
+            color: #221E1F;
+        }
+    }
+    .bannerPhoto {
+        width: 50%;
+    }
+}
+@media (max-width: 576px) {
+    .banner {
+        flex-direction: column;
+        .bannerPhoto {
+            width: 100%;
+        }
+    }
+}
+
+.platform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0px;
+    margin-bottom: 100px;
+    .title {
+        font: normal normal bold 32px/46px Noto Sans TC;
+        color: #221E1F;
+        padding-bottom: 48px;
+    }
+    .block {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        width: 100%;
+        & img {
+            max-width: 90px;
+        }
+        .name {
+            padding : 24px 0;
+            font: normal normal bold 24px/35px Noto Sans TC;
+            color: #221E1F;
+        }
+        .info {
+            font: normal normal normal 16px/24px Noto Sans TC;
+            color: #747474;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .platform {
+        margin-bottom: 60px;
+        .title {
+            font: normal normal bold 28px/40px Noto Sans TC;
+        }
+        .block {
+            flex-direction: column;
+            gap: 24px;
+            .name {
+                font: normal normal bold 18px/26px Noto Sans TC;
+                padding: 16px 0;
+            }
+        }
+    }
+}
+
+.role {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0px;
+    margin-bottom: 100px;
+    & h2 {
+        font: normal normal bold 32px/46px Noto Sans TC;
+        color: #221E1F;
+        padding-bottom: 16px;
+    }
+    & h3 {
+        font: normal normal bold 20px/29px Noto Sans TC;
+        color: #221E1F;
+        padding-bottom: 48px;
+    }
+    .roleCard {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        margin-left: -16px;
+        margin-right: -16px;
+        .roleCard-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 25%;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 12px;
+            margin-left: 16px;
+            margin-right: 16px;
+            & img {
+                border-radius: 12px 12px 0 0;
+            }
+            .roleName {
+                padding-top: 24px;
+                padding-bottom: 24px;
+                font: normal normal bold 16px/24px Noto Sans TC;
+                color: #56C4C5;
+            }
+            .roleInfo {
+                font: normal normal normal 16px/24px Noto Sans TC;
+                color: #221E1F;
+                padding-bottom: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .role {
+        margin-bottom: 60px;
+        & h2 {
+            font: normal normal bold 36px/40px Noto Sans TC;
+        }
+        & h3 {
+            font: normal normal bold 18px/26px Noto Sans TC;
+            padding-bottom: 32px;
+        }
+        .roleCard {
+            flex-direction: column;
+            text-align: center;
+            gap: 24px;
+            .roleCard-item {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-left: 16px;
+    margin-right: 16px;
+    .intro-item-group {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        gap: 28px 47px;
+        .intro-item {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            letter-spacing: 0px;
+            width: 45%;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 12px;
+            padding-top: 32px;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 48px;
+            .imgBorder {
+                display: block;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 2px 10px #00000014;
+                border-radius: 100%;
+                width: 40%;
+                height: 40%;
+                & img {
+                    padding: 10px;
+                }
+            }
+            .itemName {
+                font: normal normal bold 18px/26px Noto Sans TC;
+                color: #221E1F;
+                padding-top: 24px;
+                padding-bottom: 16px;
+            }
+            .itemInfo {
+                font: normal normal normal 16px/24px Noto Sans TC;
+                color: #221E1F;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+        }
+    }
+    .intro-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        letter-spacing: 0px;
+        align-items: left;
+        & h1 {
+            font: normal normal bold 32px/46px Noto Sans TC;
+            color: #221E1F;
+        }
+        & h3 {
+            font: normal normal normal 18px/26px Noto Sans TC;
+            color: #221E1F;
+            padding-top: 16px;
+            padding-bottom: 24px;
+        }
+        & a {
+            display: block;
+            margin: 0 auto 0 0;
+            padding: 12px 32px 12px 32px;
+            background: #56C4C5 0% 0% no-repeat padding-box;
+            border: 1px solid #56C4C5;
+            border-radius: 27px;
+            color: #FFFFFF;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .intro {
+        flex-direction: column-reverse;
+        .intro-text {
+            text-align: center;
+            margin-bottom: 32px;
+            & a {
+                margin: 0 auto;
+            }
+            & h1 {
+                font: normal normal bold 28px/40px Noto Sans TC;
+            }
+            & h3 {
+                font: normal normal normal 16px/24px Noto Sans TC;
+            }
+        }
+        .intro-item-group {
+            width: 100%;
+            gap: 24px;
+            padding: 0 52px;
+            .intro-item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0px;
+    margin-bottom: 100px;
+    .title {
+        font: normal normal bold 32px/46px Noto Sans TC;
+        color: #221E1F;
+        margin-bottom: 104px;
+    }
+    .block {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: -8px;
+        .review-item {
+            position: relative;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 12px;
+            width: 33%;
+            padding-left: 32px;
+            padding-right: 32px;
+            margin-left: 8px;
+            margin-right: 8px;
+            .avatar {
+                position: absolute;
+                left: 32px;
+                right: 240px;
+                top: -48px;
+                z-index: 10;
+                width: 86px;
+                height: 86px;
+                border-radius: 50%;
+            }
+            .reviewText {
+                text-align: left;
+                font: normal normal normal 16px/24px Noto Sans TC;
+                color: #221E1F;
+                padding-top: 48px;
+                padding-bottom: 24px;
+            }
+            .line {
+                border: 1px solid #DDDDDD;
+            }
+            .contact {
+                display: flex;
+                justify-content: space-between;
+                letter-spacing: 0px;
+                .job {
+                    padding-top: 24px;
+                    .company {
+                        font: normal normal bold 16px/24px Noto Sans TC;
+                        color: #221E1F;
+                        padding-bottom: 8px;
+                    }
+                    .jobTitle {
+                        font: normal normal normal 16px/24px Noto Sans TC;
+                        color: #221E1F;
+                        padding-bottom: 24px;
+                    }
+                }
+                .starArea {
+                    display: flex;
+                    align-items: end;
+                    & img {
+                        width: 16px;
+                        height: 16px;
+                        margin-bottom: 24px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .pagination {
+        margin-top: 24px;
+        display: flex;
+        .page {
+            background: #DDDDDD 0% 0% no-repeat padding-box;
+            border-radius: 50px;
+            width: 10px;
+            height: 10px;
+            margin-right: 8px;
+        }
+        .active {
+            background: #FFD153 0% 0% no-repeat padding-box;
+            border-radius: 50px;
+            width: 16px;
+            height: 10px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .review {
+        .block {
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            .review-item {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .gone {
+                display: none;
+            }
+        }
+    }
+}
+
+.footer-box {
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 503px;
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: 0px;
+        & h2 {
+            font: normal normal bold 32px/46px Noto Sans TC;
+            color: #221E1F;
+            padding-bottom: 48px;
+            padding-top: 15%;
+        }
+        & a {
+            display: block;
+            margin: 0 auto;
+            background: #56C4C5 0% 0% no-repeat padding-box;
+            border: 1px solid #56C4C5;
+            color: #FFFFFF;
+            border-radius: 27px;
+            padding: 12px 32px 12px 32px;
+        }
+    }
+    
+    
+}
+@media (max-width: 576px) {
+    .footer-box {
+        background-image: url("https://hexschool.github.io/webLayoutTraining1st/chatTalker_images/footer_sm.svg");
+        height: 461px;
+    }
+}
+
+.footer {
+    & p {
+        background: #F5F5F5 0% 0% no-repeat padding-box;
+        text-align: center;
+        font: normal normal normal 16px/24px Noto Sans TC;
+        letter-spacing: 0px;
+        color: #221E1F;
+        padding: 16px 0;
+    }
+}
+
+.btn-toTop{
+    width: 71px;
+    height: 71px;
+    position: fixed;
+    right: 45px;
+    bottom: 23px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 71px;
+    text-align: center;
+    background: #56C4C5;
+    z-index: 1;
+}
+@media (max-width: 576px) {
+    .btn-toTop{
+        width: 50px;
+        height: 50px;
+        right: 16px;
+        bottom: 18px;
+        line-height: 50px;
+        z-index: 1;
+    }
+}
